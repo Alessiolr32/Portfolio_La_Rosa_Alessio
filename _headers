@@ -1,0 +1,32 @@
+# Video 
+ /videos/*
+   Cache-Control: public, max-age=604800, immutable
+
+# Poster immagini
+ /videos/posters/*
+   Cache-Control: public, max-age=604800, immutable
+
+# Immagini generiche
+ /img/*
+   Cache-Control: public, max-age=604800, immutable
+
+# CSS
+ /style.css
+   Cache-Control: public, max-age=604800, immutable
+
+# JavaScript
+ /script.js
+   Cache-Control: public, max-age=604800, immutable
+
+# HTML (index.html)
+ /index.html
+   Cache-Control: no-cache
+
+# Font Google o Font Awesome
+ /fonts/*
+   Cache-Control: public, max-age=604800, immutable
+
+# Icone font awesome CDN non possono essere cache-immutable, ma puoi usare max-age
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css
+   Cache-Control: public, max-age=86400
+

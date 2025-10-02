@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Alessio La Rosa">
+    <meta name="description" content="Portfolio di Alessio La Rosa, Web Developer specializzato in soluzioni moderne ed eleganti per il web. Mostro progetti realizzati in HTML, CSS, JS, Laravel e altro.">
+    <meta name="keywords" content="Alessio La Rosa, Web Developer, Portfolio, HTML, CSS, JavaScript, Laravel, Progetti Web, Frontend, Backend">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#111111">
+    
+    <!-- Meta Open Graph -->
+    <meta property="og:title" content="Alessio La Rosa | Portfolio Web Developer">
+    <meta property="og:description" content="Portfolio di Alessio La Rosa, Web Developer specializzato in soluzioni moderne ed eleganti per il web.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tuo-sito-portfolio.netlify.app/">
+    <meta property="og:image" content="https://tuo-sito-portfolio.netlify.app/img/og-image.png">
+    <meta property="og:site_name" content="Portfolio Alessio La Rosa">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    
+    <title>Portfolio Alessio La Rosa Web Developer</title>
+    
+    <!-- Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark text-light">
+    <div id="vanta-bg"></div>
+    
+    <div class="overlay">              
+        <!-- Header con flip-card -->
+        <header class="text-center mt-5">
+            <div class="flip-card mb-1 reveal">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/img/flipCard/flipCardFront.jpg" alt="Alessio Front" class="rounded-circle">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="/img/flipCard/flipCardBack.jpg" alt="Alessio Back" class="rounded-circle">
+                    </div>
+                </div>
+            </div>
+            <div class="pt-1 reveal">
+                <h1>Ciao, sono Alessio</h1>
+                <span class="text-light"><strong>Web Developer</strong> | Appassionato di tecnologia, specializzato in soluzioni moderne ed eleganti per il web.</span>
+            </div>
+        </header>
+        
+        <!-- Main con video -->
+        <main class="container pb-5">
+            <section class="row g-5 justify-content-center reveal" id="portfolio">
+                <h2 class="m-0 h3 fw-semibold">Portfolio</h2>
+                <!-- Card 1 -->
+                <article class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex mx-auto">
+                    <div class="card rounded-4 h-100" data-bs-toggle="modal" data-bs-target="#videoModal1" style="width: 22rem;">
+                        <video class="card-img-top" autoplay muted loop playsinline preload="metadata" poster="/videos/posters/psicologa.png" style="height:200px; object-fit:cover; cursor: pointer;">
+                            <source src="/videos/psicologa.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title text-light text-center mt-1">
+                                <a href="https://alescio-valeria-psicologa-website.netlify.app/" target="_blank"
+                                class="text-light fw-semibold">
+                                <i class="fa-solid fa-up-right-from-square me-2"></i>Psicologa Valeria
+                                Alescio</a>                    
+                            </h2>
+                            <p class="card-text mt-2 truncated"><strong>Website</strong> realizzato su <strong>commissione</strong>, pensato per essere leggero e intuitivo. L’interfaccia è progettata per offrire una navigazione fluida e ottimizzata su ogni dispositivo. <strong>Design curato</strong> e professionale con attenzione alle prestazioni garantendo un’esperienza moderna ed efficace.<br><br>                                
+                                <strong>Tecnologie utilizzate:</strong><br>
+                                - HTML5<br>
+                                - CSS3<br>
+                                - JavaScript                                
+                            </p>
+                            <button class="btn btn-link p-0 mt-auto read-more-btn text-decoration-none"><i class="fas fa-play-circle me-1"></i>Guarda e Leggi di più</button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Card 2 -->
+                <article class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex mx-auto">
+                    <div class="card rounded-4 h-100" data-bs-toggle="modal" data-bs-target="#videoModal2" style="width: 22rem;">
+                        <video class="card-img-top" autoplay muted loop playsinline preload="metadata" poster="/videos/posters/armonymarket.png" style="height:200px; object-fit:cover; cursor:pointer;">
+                            <source src="/videos/armonymarket.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title text-light text-center mt-1">
+                                <a href="https://github.com/Alessiolr32/Portfolio_ArmonyMarket_La_Rosa_Alessio"
+                                target="_blank" class="text-light fw-semibold">
+                                <i class="fa-solid fa-up-right-from-square me-2"></i>ArmonyMarket</a>                                
+                            </h2>
+                            <p class="card-text mt-2 truncated"><strong>Progetto finale</strong> del percorso con <em>Aulab</em>, <strong>E-commerce</strong> sviluppato per unire solidità e praticità. Struttura modulare pensata per garantire flessibilità e gestione <strong>dinamica</strong> dei dati. Integra API di Google e componenti Livewire, offrendo un’esperienza <strong>interattiva</strong> e <strong>moderna.</strong><br><br>
+                                
+                                <strong>Tecnologie utilizzate:</strong><br>
+                                - HTML5<br>
+                                - CSS3<br>
+                                - JavaScript<br>
+                                - PHP<br>
+                                - Laravel<br>
+                                - Livewire<br>
+                                - Google API                                
+                            </p>
+                            <button class="btn btn-link p-0 mt-auto read-more-btn text-decoration-none"><i class="fas fa-play-circle me-1"></i>Guarda e Leggi di più</button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Card 3 -->
+                <article class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex mx-auto">
+                    <div class="card rounded-4 h-100" data-bs-toggle="modal" data-bs-target="#videoModal3" style="width: 22rem;">
+                        <video class="card-img-top" autoplay muted loop playsinline preload="metadata" poster="/videos/posters/pokedex.png" style="height:200px; object-fit:cover; cursor: pointer;">
+                            <source src="/videos/pokédex.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title text-light text-center mt-1">
+                                <a href="https://github.com/Alessiolr32/Portfolio_Pokedex_La_Rosa_Alessio"
+                                target="_blank" class="text-light mt-1 fw-semibold">
+                                <i class="fa-solid fa-up-right-from-square me-2"></i>Pokédex Pokémon</a>                                
+                            </h2>
+                            <p class="card-text mt-2 truncated"><strong>Progetto sviluppato</strong> durante il percorso con <em>Aulab</em> e ispirato al mondo dei <strong>Pokémon.</strong> Integra un’<strong>API esterna</strong> per accedere ai dati e utilizza Livewire per componenti dinamici lato server. Struttura pensata per garantire interattività, fluidità e un’esperienza <strong>interattiva</strong>.<br><br>
+                                
+                                <strong>Tecnologie utilizzate</strong>:<br>
+                                - HTML5<br>
+                                - CSS3<br>
+                                - JavaScript<br>
+                                - PHP<br>
+                                - Laravel<br>
+                                - Livewire<br>
+                                - API esterna <strong>Pokémon</strong>
+                            </p>
+                            <button class="btn btn-link p-0 mt-auto read-more-btn text-decoration-none"><i class="fas fa-play-circle me-1"></i>Guarda e Leggi di più</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            
+            <!-- Banner -->
+            <section class="banner-card mt-5 reveal">
+                <div class="banner"></div>
+            </section>
+            
+            <!-- Certificates and Description -->            
+            <section class="row g-5 justify-content-around align-items-center reveal">
+                <h2 class="m-0 pt-4 h3 fw-semibold">Certificates</h2>
+                
+                <article class="col-12 col-md-4">
+                    <div class="card p-0 h-100">
+                        <a href="https://www.credential.net/323a9253-23c4-4a52-9d2a-a2ad01c38791#acc.uoycfFdG" target="_blank"
+                            title="Visualizza certificato Full Stack Aulab">
+                            <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/161154781"
+                                alt="Certificato Full Stack Web Development di Alessio La Rosa" class="img-fluid rounded-top w-100"
+                                style="height: 250px; object-fit: cover; display: block; margin: auto;">
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="col-12 col-md-8">
+                    <div class="card text-light p-3">
+                        <p class="mb-0">
+                            Sono un <strong>Web Developer</strong> appassionato di tecnologia e design, con una forte attenzione ai dettagli e alla qualità del codice. Ho completato con successo il corso di <strong>Full Stack Web Development</strong> presso <em>Aulab</em>, dove ho acquisito competenze in <strong>HTML, CSS, JavaScript, PHP, Laravel e Java</strong>, realizzando progetti concreti e applicazioni web complete.
+                        </p>
+                        <p class="mt-3 mb-0">
+                            Mi dedico alla creazione di interfacce moderne, responsive e ottimizzate, curando in particolare <strong>l’esperienza utente (UX)</strong>. Sono una persona curiosa, orientata al problem solving e sempre alla ricerca di nuove sfide per
+                            crescere professionalmente. Il mio obiettivo è contribuire a progetti digitali innovativi che uniscano <strong>tecnologia, reatività ed efficienza</strong>.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            
+            <!-- Certificates and Description -->
+            <section class="row g-5 justify-content-around align-items-center reveal">
+                <h2 class="m-0 pt-4 h3 fw-semibold">Curriculum Vitae</h2>
+                
+                <article class="col-12 col-md-8">
+                    <div class="card text-light p-3">
+                        <p class="mb-0">
+                            Il mio <strong>Curriculum Vitae</strong> raccoglie tutte le esperienze professionali, formative che ho maturato come <strong>Web Developer</strong> e non. Include le competenze tecniche acquisite nei principali linguaggi e framework, tra cui <strong>HTML5, CSS3, JavaScript, PHP, Laravel, Livewire e Java</strong>, oltre agli strumenti di sviluppo come <strong>Git, GitHub e Bootstrap.</strong>
+                        </p>
+                        <p class="mt-3 mb-0">
+                            Nel <strong>CV</strong> sono elencati anche i progetti reali su cui ho lavorato, con dettagli sulle soluzioni adottate e sull’ottimizzazione dell’esperienza utente. Troverai informazioni sulle <strong>certificazioni</strong> ottenute e risultati raggiunti in ambito <strong>web e app development. </strong>Clicca sul CV per aprirlo e scoprire il mio percorso.
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="col-12 col-md-4">
+                    <div class="p-0 card-cv">
+                        <a href="/files/cv.pdf" target="_blank" title="Apri CV in PDF">
+                            <img src="/img/cvImg.png" alt="CV PDF"
+                            style="width:100%; height:250px; object-fit:cover; border-radius:14px;">
+                        </a>
+                    </div>
+                </article>
+            </section>
+            
+            <!-- Skills -->
+            <section id="skills" class="reveal">
+                <h2 class="h3 pb-4 text-center fw-semibold">Skills</h2>
+                <div class="skill-carousel">
+                    <div class="skill-track">
+                        <div class="skill">HTML5</div>
+                        <div class="skill">CSS3</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">PHP</div>
+                        <div class="skill">Laravel</div>
+                        <div class="skill">Java</div>
+                        <div class="skill">Bootstrap</div>
+                        <div class="skill">Git/GitHub</div>
+                        
+                        <!-- Duplicate per effetto loop continuo -->
+                        <div class="skill">HTML5</div>
+                        <div class="skill">CSS3</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">PHP</div>
+                        <div class="skill">Laravel</div>
+                        <div class="skill">Java</div>
+                        <div class="skill">Bootstrap</div>
+                        <div class="skill">Git/GitHub</div>
+                    </div>                    
+                </div>
+            </section>
+                       
+            <!-- Contacts -->
+            <section id="contacts" class="text-center reveal">
+                <h2 class="h3 pb-5 fw-semibold">Contatti</h2>
+                
+                <div class="row g-1 justify-content-around">                    
+                    <article class="col-12 col-sm-12 pb-4 d-flex">
+                        <div class="contact-card p-3 w-100 d-flex flex-row justify-content-around align-items-center text-center">                            
+                            
+                            <!-- WhatsApp -->
+                            <div class="contact-item">
+                                <a href="https://wa.me/393313391954" target="_blank" title="WhatsApp" class="text-decoration-none">
+                                    <i class="fa-brands fa-whatsapp fa-2x mb-2"></i>
+                                    <h3 class="h6 text-light mb-0">WhatsApp</h3>
+                                </a>                                
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="contact-item">
+                                <a href="mailto:alessiolr32@gmail.com" title="Email" class="text-decoration-none">
+                                    <i class="fa-solid fa-envelope fa-2x mb-2"></i>
+                                    <h3 class="h6 text-light mb-0">Email</h3>
+                                </a>                               
+                            </div>
+                            
+                            <!-- GitHub -->
+                            <div class="contact-item">
+                                <a href="https://github.com/Alessiolr32" target="_blank" title="GitHub" class="text-decoration-none">
+                                    <i class="fa-brands fa-github fa-2x mb-2"></i>
+                                    <h3 class="h6 text-light mb-0">GitHub</h3>
+                                </a>
+                                
+                            </div>
+                            
+                            <!-- LinkedIn -->
+                            <div class="contact-item">                                
+                                <a href="https://www.linkedin.com/in/alessio-la-rosa-frontenddeveloper/" target="_blank" title="LinkedIn" class="text-decoration-none">
+                                    <i class="fa-brands fa-linkedin fa-2x mb-2"></i>
+                                    <h3 class="h6 text-light mb-0">LinkedIn</h3>
+                                </a>                                
+                            </div>                            
+                        </div>
+                    </article>                    
+                </div>
+            </section>            
+        </main>
+        
+        <!-- Footer -->
+        <footer class="text-center pt-5">
+            <p class="pt-5 mb-0">
+                © <span id="year"></span> Alessio La Rosa - Tutti i diritti riservati
+            </p>
+        </footer>
+    </div>
+    
+    <!-- Top Button -->
+    <aside>
+        <a href="#" class="text-decoration-none rounded-circle top-button-up">
+            𖤂
+        </a>
+    </aside>
+    
+    <!-- Modals -->
+    <section>
+        <!-- Modal 1 -->
+        <div class="modal fade" id="videoModal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content bg-dark border-0">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"
+                        aria-label="Chiudi"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <video controls autoplay muted style="width:100%; height:100%;">
+                                <source src="/videos/psicologa.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal 2 -->
+        <div class="modal fade" id="videoModal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content bg-dark border-0">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"
+                        aria-label="Chiudi"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <video controls autoplay muted style="width:100%; height:100%;">
+                                <source src="/videos/armonymarket.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal 3 -->
+        <div class="modal fade" id="videoModal3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content bg-dark border-0">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"
+                        aria-label="Chiudi"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <video controls autoplay muted style="width:100%; height:100%;">
+                                <source src="/videos/pokédex.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
