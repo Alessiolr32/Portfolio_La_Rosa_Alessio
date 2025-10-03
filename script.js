@@ -14,6 +14,7 @@ VANTA.NET({
   spacing: 20.00
 });
 
+
 // Flip card
 const flipCards = document.querySelectorAll('.flip-card-inner');
 const flipInterval = 4000; 
@@ -22,6 +23,7 @@ flipCards.forEach(card => {
     card.classList.toggle('flipped');
   }, flipInterval);
 });
+
 
 // Read more
 const buttons = document.querySelectorAll('.read-more-btn');
@@ -34,16 +36,15 @@ buttons.forEach(btn => {
 });
 
 
-
 // Skills Carousel
 const track = document.querySelector('.skill-track');
 let position = 0;
 const speed = 0.3;
 let isPaused = false;
 
+
 // Duplica il contenuto per loop continuo
 track.innerHTML += track.innerHTML;
-
 const trackWidth = track.scrollWidth / 2;
 
 // Animazione carosello
@@ -73,42 +74,55 @@ document.getElementById("year").textContent = new Date().getFullYear();
 // Reveal
 document.addEventListener("DOMContentLoaded", () => {
   const reveals = document.querySelectorAll('.reveal, .reveal-right, .reveal-left');
-
+  
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("active");
-        // se vuoi che l’animazione rimanga, lascia così
         // se vuoi che si ripeta quando esce/rientra, rimuovi l’else
-      } else {
+        } else {
         entry.target.classList.remove("active"); 
       }
     });
   }, { threshold: 0.15 });
-
+  
   reveals.forEach(el => observer.observe(el));
 });
 
 
 // Script per reveal con IntersectionObserver
 document.addEventListener("DOMContentLoaded", function () {
-    const revealElements = document.querySelectorAll(".reveal, .reveal-header");
-
-    const observerOptions = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.1 
-    };
-
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("active"); 
-                observer.unobserve(entry.target); 
-            }
-        });
-    }, observerOptions);
-    revealElements.forEach(el => revealObserver.observe(el));
+  const revealElements = document.querySelectorAll(".reveal, .reveal-header");
+  
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1 
+  };
+  
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active"); 
+        observer.unobserve(entry.target); 
+      }
+    });
+  }, observerOptions);
+  revealElements.forEach(el => revealObserver.observe(el));
 });
 
 
+
+//Video Modal2
+const videoModal2 = document.getElementById('videoModal2');
+const vimeoPlayer2 = document.getElementById('vimeoPlayer2');
+videoModal2.addEventListener('hidden.bs.modal', () => {
+  vimeoPlayer2.src = vimeoPlayer2.src;
+});
+
+//Video Modal3
+const videoModal3 = document.getElementById('videoModal3');
+const vimeoPlayer3 = document.getElementById('vimeoPlayer3');
+videoModal3.addEventListener('hidden.bs.modal', () => {
+  vimeoPlayer3.src = vimeoPlayer3.src;
+});
