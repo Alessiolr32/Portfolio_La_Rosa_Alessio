@@ -3,7 +3,7 @@ VANTA.NET({
   el: "#vanta-bg",
   mouseControls: false,
   touchControls: false,
-  gyroControls: true,
+  gyroControls: false,
   minHeight: 200.00,
   minWidth: 200.00,
   scale: 1.00,
@@ -13,6 +13,10 @@ VANTA.NET({
   maxDistance: 18.00,
   spacing: 20.00
 });
+
+
+// disattiva animazione gradient CSS (nel caso fosse rimasta)
+document.body.style.animation = 'none';
 
 
 // Flip card
