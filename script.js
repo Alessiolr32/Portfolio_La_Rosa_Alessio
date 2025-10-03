@@ -2,7 +2,7 @@
 VANTA.NET({
   el: "#vanta-bg",
   mouseControls: false,
-  touchControls: true,
+  touchControls: false,
   gyroControls: true,
   minHeight: 200.00,
   minWidth: 200.00,
