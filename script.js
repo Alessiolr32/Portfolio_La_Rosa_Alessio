@@ -1,4 +1,12 @@
-// VANTA.NET Background
+// --- Fissa l'altezza per mobile ---
+function setVh() {
+  document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+}
+setVh();
+window.addEventListener('resize', setVh);
+
+
+// --- VANTA.NET Background ---
 VANTA.NET({
   el: "#vanta-bg",
   mouseControls: false,
@@ -15,7 +23,7 @@ VANTA.NET({
 });
 
 
-// disattiva animazione gradient CSS (nel caso fosse rimasta)
+// --- Disattiva eventuale animazione gradient CSS residua ---
 document.body.style.animation = 'none';
 
 
